@@ -1,7 +1,7 @@
 Config = {}
 
 -- for ox inventory, this will automatically be adjusted, do not change! for other inventories, change to "resource_name"
-Config.CustomInventory = false
+Config.CustomInventory = 'qs'
 
 Config.Accounts = {
     bank = {
@@ -55,9 +55,9 @@ Config.AdminLogging = false -- Logs the usage of certain commands by those with 
 -------------------------------------
 -- DO NOT CHANGE BELOW THIS LINE !!!
 -------------------------------------
-if GetResourceState("ox_inventory") ~= "missing" then
-    Config.CustomInventory = "ox"
-end
+-- if GetResourceState("ox_inventory") ~= "missing" then
+--     Config.CustomInventory = "ox"
+-- end
 
 Config.EnableDefaultInventory = Config.CustomInventory == false -- Display the default Inventory ( F2 )
 
